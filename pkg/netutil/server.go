@@ -52,11 +52,6 @@ func (t *TCPServer) Run() (err error) {
 			break
 		}
 
-		if conn == nil {
-			log.Fatalln("could not create connection", err)
-			break
-		}
-
 		// Handle connection in a goroutine
 		go t.handle(conn)
 

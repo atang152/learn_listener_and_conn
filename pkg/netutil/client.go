@@ -8,7 +8,6 @@ import (
 // Client defines the methods our client implementation must satisfy
 type Client interface {
 	Run() error
-	Close() error
 }
 
 // TCPClient holds an address and a net.Conn
